@@ -2,5 +2,5 @@ FROM python:latest
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-COPY ./bank.py .
-CMD [ "python", "./bank.py" ]
+COPY ./loyalty.py .
+CMD [ "python", "./loyalty.py" ]
